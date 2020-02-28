@@ -1,0 +1,53 @@
+@import "variables";
+@import "mixin";
+@import "sidebar";
+
+// 背景
+.primary-back{
+  background: $color-primary;
+}
+
+.danger-back {
+  background: $color-danger;
+}
+
+.success-back{
+  background: $color-success;
+}
+
+html, body, #app{
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration:none
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.app-main {
+  @include relative
+}
+
+//表格栏样式
+.table-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+//分页栏样式
+.pagination-container {
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+}
